@@ -8,7 +8,7 @@ var startingfile = new Buffer(fs.readFileSync('index.html','utf8'),"utf-8");
 app.get('/', function(request, response) {
 //  response.send(fs.readFileSync("./index.html").toString());
 
-	response.send("Text works!");
+	response.send('Text works!');
 });
 
 var port = process.env.PORT || 5000;
